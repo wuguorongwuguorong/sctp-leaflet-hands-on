@@ -47,13 +47,13 @@ Start with the provided HTML file that includes a Bootstrap layout and a Leaflet
 - Refer to the above section on what properties a sighting should have. The user should be able to choose the type of sightings, either with a radio button or from a `<select>` dropdown
 - The popup should include "Confirm" and "Cancel" buttons.
 - Hint: Use Leaflet's `map.on('click', function(e) { ... })` to handle map clicks.
--  See the example at https://glitch.com/edit/#!/sour-shine-marquess where it demostrates creating a simple form in Leaflet.
+-  See the example at https://glitch.com/edit/#!/sour-shine-marquess where it demonstrates creating a simple form in Leaflet.
 
 ### 2. Save Sightings to JSONbin
 - When a user confirms a sighting, save the location data to JSONbin.
 - Use the JSONbin API to store the sighting data.
 - Each sighting should include latitude, longitude, and a timestamp.
-- Hint: Use the Fetch API to send POST requests to JSONbin.
+- Hint: Use the `axios` library to send POST requests to JSONbin.
 
 ### 3. Load and Display Sightings
 - When the app loads, retrieve all saved sightings from JSONbin.
@@ -85,53 +85,6 @@ Start with the provided HTML file that includes a Bootstrap layout and a Leaflet
 4. Time and Date API:
    - WorldTimeAPI: http://worldtimeapi.org/
 
-## Submission Guidelines
-
-1. Submit your HTML, CSS, and JavaScript files.
-2. Include a README.md file explaining how to run your application and any additional features you implemented.
-3. Provide your JSONbin ID for testing purposes.
-
-## Evaluation Criteria
-
-- Correct implementation of required features (60%)
-- Code quality and organization (20%)
-- User interface design and usability (10%)
-- Creative use of additional APIs or features (10%)
-
-Good luck, and happy ghost hunting!
 
 
-### 2. Save Sightings to JSONbin
-- When a user confirms a sighting, save the location data to JSONbin.
-- Use the JSONbin API to store the sighting data.
-- Each sighting should include latitude, longitude, and a timestamp.
-- Hint: Use the Fetch API to send POST requests to JSONbin.
-
-### 3. Load and Display Sightings
-- When the app loads, retrieve all saved sightings from JSONbin.
-- Display each sighting as a pin on the map.
-- Clicking on a pin should show a popup with the sighting details (date/time).
-- Hint: Use the Fetch API to GET data from JSONbin, then use Leaflet's `L.marker()` to add pins to the map.
-
-## Additional Challenges
-
-1. Implement a heatmap of ghost sightings using the Leaflet.heat plugin.
-2. Add a feature to filter sightings by date range.
-3. Integrate with a weather API to show weather conditions at the time of each sighting.
-4. Create custom ghost icons for the map markers.
-
-## Suggested APIs and Resources
-
-1. GeoJSON Data:
-   - Singapore Planning Areas: https://data.gov.sg/dataset/master-plan-2014-planning-area-boundary-no-sea
-   - Singapore Parks: https://data.gov.sg/dataset/parks
-
-2. Weather API:
-   - OpenWeatherMap API: https://openweathermap.org/api
-
-3. Geocoding API:
-   - OneMap API (Singapore): https://www.onemap.gov.sg/docs/
-
-4. Time and Date API:
-   - WorldTimeAPI: http://worldtimeapi.org/
 
